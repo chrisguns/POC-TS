@@ -4,7 +4,11 @@ import { type PropsWithChildren } from 'react';
 /**
  * This file is web-only and used to configure the root HTML for every web page during static rendering.
  * The contents of this function only run in Node.js environments and do not have access to the DOM or browser APIs.
- */
+ * Root HTML component for web pages during static rendering.
+ * This function runs only in Node.js environments.
+ * @param {PropsWithChildren} props - The properties with children.
+ * @returns {JSX.Element} The root HTML component. 
+*/
 export default function Root({ children }: PropsWithChildren) {
   return (
     <html lang="en">

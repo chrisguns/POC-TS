@@ -9,6 +9,10 @@ import Animated, {
 
 import { ThemedText } from '@/components/ThemedText';
 
+/**
+ * HelloWave component that displays a waving text animation.
+ * @returns {JSX.Element} The HelloWave component.
+ */
 export function HelloWave() {
   const rotationAnimation = useSharedValue(0);
 
